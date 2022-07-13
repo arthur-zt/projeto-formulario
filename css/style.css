@@ -1,0 +1,268 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open sans';
+}
+
+html,body{
+	height: 100%;
+}
+
+.center{
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+.header{
+	width: 100%;
+	padding:0 2%;
+	height: 60px;
+	background-color: #212343;
+}
+
+.header img{
+	margin: 16px;
+}
+
+.container-banner{
+	width: 100%;
+	padding: 0 2%;
+	height: 557px;
+	background-image: url('../img/header_bg.png');
+	background-size: cover;
+	background-position: center;
+}
+.container-banner > .center{
+	height: 100%;
+}
+
+.form{
+	padding: 10px; 
+	float: right;
+	width: 400px;
+	height: calc(100% + 30px);
+	position: relative;
+	top:-15px;
+	border-width: 12px;
+	border-color: rgba(100,100,100,0.3);
+	border-style: solid;
+	background-color: white;
+	background-clip: padding-box;
+
+/* BACKGROUND ORIGIN TEM O MESMO CONCEITO 
+   POREM SERVE PARA IMAGEM */
+}
+
+.form h2{
+	font-size: 20px;
+	color: #999999;
+	font-weight: normal;
+	text-align: center;
+}
+
+.input-container{
+	margin-top: 20px;
+}
+
+
+.form p{
+	margin: 20px 0;
+	display: inline-block;
+	width: 350px;
+	color: #BBBBBB;
+	font-size: 15px;
+	text-align: center;
+}
+
+.input-container input[type=text]{
+	display: inline-block;
+	margin-top: 8px;
+	width: 95%;
+	height: 35px;
+	outline: 0;
+	color: #BBBBBB;
+	font-size: 14px;
+	border: 0;
+	border-bottom: 1px solid #ccc;
+
+}
+
+.form input[type=submit]{
+	background-color: #363A6D;
+	color: white;
+	font-size: 22px;
+	width: 75%;
+	height: 40px;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	border-bottom: 5px solid #4A5097;
+}
+
+.form .input-submit-container{
+	text-align: center;
+}
+
+.form input[type=submit]:hover{
+	background-color: #323665;
+}
+
+.container-list{
+	float: left;
+	width: 45%;
+	background-color: rgba(33,35,67, 0.7);
+	margin-top: 58px;
+	padding: 35px;
+
+}
+
+.container-list ul{
+	list-style-position: inside;
+	padding: 8px;
+}
+
+.container-list ul li{
+	margin-top: 22px;
+	color: white;
+	height: 100%;
+}
+.container-2{
+	padding: 40px 2%;
+	background-color: rgb(230,230,230);
+	text-align: center;
+}
+
+.container-2 h2{
+	font-size: 24px;
+	font-weight: normal;
+
+}
+.container-2 p{
+	width: 100%;
+	max-width: 768px;
+	margin: 15px 0;
+	display: inline-block;
+	text-align: justify;
+}
+
+.arrow{
+	cursor: pointer;
+	position: relative;
+	top: 60px;
+	left: 50%;
+	margin-left:-20px; 
+	width: 45px;
+	height: 45px;
+	background-image: url(../img/arrow.png);
+	background-size: 100% 100%;
+}
+
+.section-1{
+	padding: 90px 2%;
+}
+
+.section-1 h2{
+	text-align: center;
+	color:#462663;
+	font-weight: normal;
+}
+
+.container-section{
+	margin-top: 40px;
+	text-align: center;
+}
+
+.container-single{
+	float: left;
+	width: 33.333%;
+	padding: 30px;
+}
+
+.container-single p{
+	text-align: justify;
+	padding: 10px 25px;
+}
+
+.container-single img{
+	width: 45px;
+
+}
+.clear{
+	clear: both;
+}
+
+.footer{
+	padding: 30px 0;
+	border-top: 2px solid #888888;
+	text-align: center;
+	color:#888;
+}
+
+.footer p{
+	margin-top: 8px
+}
+
+@media screen and (max-width: 1024px){
+	.header{
+		height: auto;
+		width: 100%;
+		padding:15px 0;
+		text-align:center;
+	}
+
+	.header img{
+		margin: 0;
+	}
+
+	.container-banner{
+		width: 100%;
+		padding: 40px 2%;
+		height: auto;
+		text-align: center;
+	}
+
+	.form{
+		max-width: 400px;
+		padding: 10px; 
+		float: none;
+		width: 90%;
+		height: 100%;
+		display: inline-block;
+		position: relative;
+		margin-top: 30px;
+		top:0;
+	}
+
+	.container-list{
+		display: inline-block;
+		float: none;
+		width: 90%;
+		max-width: 500px;
+		height: auto;
+		background-color: rgba(33,35,67, 0.7);
+		margin-top: 58px;
+		padding: 35px;
+	
+	}
+
+	.input-container input[type=text]{
+		margin-top: 8px;
+		width: 100%;
+		height: 35px;
+
+	
+	}
+	
+	.form input[type=submit]{
+		max-width: 280px;
+		width: 100%;
+		height: 40px;
+	}
+
+}
